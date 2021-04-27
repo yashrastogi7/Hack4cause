@@ -1,39 +1,4 @@
-body{
-	background:rgb(159,255,128);
-}
-h1{
-	font-family:"Times new roman" serif;
-	/*font-family:sans-serif,serif;*/
-	font-size:32pt;
-}
-a{
-	color:white;
-	text-decoration:none;
-}
-a:hover{
-color:black;
-background:rgb(0,255,204);
-text-decoration:none;
-}
-.indent{
-	margin-left:10px;
-}
-.gap_below{
-	margin-bottom:25px;
-}
-.greenlink:hover{
-	color:blue;
-	background:green;
-}
-.gradient_background1{
-background-image: linear-gradient(to bottom, #43e97b 0%, #38f9d7 100%);
-}
+
 .gradient_background2{
-background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
-}
-.gradient_background3{
-background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
-}
-.gradient_background4{
-background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
