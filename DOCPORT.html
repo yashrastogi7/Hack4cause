@@ -1,0 +1,151 @@
+
+<html>
+	<head>
+		<title>DCP</title>
+		<link rel="stylesheet"
+		type="text/css"
+		href="styles.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/11727/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+	</head>
+    <body class="gradient_background2">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Hack4cause.html">AlchemY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="DOCPORT.html">Doc Portal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="a.html">Check</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="familyp.html">Family Portal</a>
+              </li> 
+            </ul>
+          </div>
+    </nav>
+    <div class="col lg-1 mb-4 mt-4">
+      <h3>
+        Name:
+        <small class="text-muted">Mukesh</small>
+      </h3>
+      <h3>
+        SPO2:
+        <small class="text-muted">96%</small>
+      </h3>
+      <h3>
+        HeartRate:
+        <small class="text-muted">70 Bps</small>
+      </h3>
+    </div>
+   
+    <a href="https://docs.google.com/spreadsheets/d/14upVX8lk9DABhNPMfTQKMrK8ls8Xd3SpA9DbDyL4Tpk/edit#gid=0" class="btn btn-primary btn-lg ml-1 mb-2 " role="button">Live Status</a>
+    <a href="https://docs.google.com/spreadsheets/d/1aup_rGmnqB8dZ-YN-mV0tK6VSIC7mthhLBlIj29BtWQ/edit?usp=sharing" class="btn btn-secondary btn-lg ml-1 mb-2" role="button">Prescriptions</a>
+    <br/>
+    <form id="myForm">
+		<div class= "ml-3 mt-2">
+            <label class="form-label">General</label>
+            <br/>
+            <input type="radio" name="general" value="BP Instrument">
+            <label  >BP Instrument</label><br>
+            <input type="radio" name="general" value="Facemask">
+            <label>Facemask</label><br>
+            <input type="radio" name="general" value="Gloves">
+            <label>Gloves</label><br>
+            <input type="radio" name="general" value="Nebulizer Machine">
+            <label>Nebulizer Machine</label><br>
+            <input type="radio" name="general" value="Oximeter">
+            <label>Oximeter</label><br>
+            <input type="radio" name="general" value="Oxygen Mask">
+            <label>Oxygen Mask</label><br>
+            <input type="radio" name="general" value="Oxygen regulator">
+            <label>Oxygen regulator</label><br>
+            <input type="radio" name="general" value="Sanitizer">
+            <label>Sanitizer</label><br>
+            <input type="radio" name="general" value="Sparometer">
+            <label>Sparometer</label><br>
+            <input type="radio" name="general" value="Thermometer">
+            <label>Thermometer</label><br>
+            <input type="radio" name="general" value="Vaporizer">
+            <label>Vaporizer</label><br>
+            <input type="radio" name="general" value="Betadine mouthwash">
+            <label>Betadine mouthwash</label><br>
+        </div>
+        <br/>
+        <div class= "ml-3 mt-2">
+            <label class="form-label">Injections</label>
+            <br/>
+            <input type="radio" name="injections" value="Azythromycin Inj(Azee)">
+            <label>Azythromycin(Azee)</label><br>
+            <input type="radio" name="injections" value="Clexane 0.6ml (Enoxaparin Inj 60mg)">
+            <label>Clexane 0.6ml (Enoxaparin Inj 60mg)</label><br>
+            <input type="radio" name="injections" value="Doxycycline">
+            <label>Doxycycline</label><br>
+            <input type="radio" name="injections" value="Itolizumab">
+            <label>Itolizumab</label><br>
+            <input type="radio" name="injections" value="Methylprednisolone 40mg Inj">
+            <label>Methylprednisolone 40mg</label><br>
+            <input type="radio" name="injections" value="Paracetamol IV 100 ml">
+            <label>Paracetamol IV 100 ml</label><br>
+            <input type="radio" name="injections" value="Remdesivir">
+            <label>Remdesivir</label><br>
+            <input type="radio" name="injections" value="Sodium Bicarbonate">
+            <label>Sodium Bicarbonate</label><br>
+            <input type="radio" name="injections" value="Vitamin C Inj(Ascorbic acid) 1.5 gm">
+            <label>Vitamin C Inj(Ascorbic acid) 1.5 gm</label><br>
+        </div>
+		<br/>
+        <div class= "ml-3 mt-2">
+            <label class="form-label">Tablets</label>
+            <br/>
+            <input type="radio" name="tablets" value="Azythromycin 500mg tab">
+            <label>Azythromycin 500mg tab</label><br>
+            <input type="radio" name="tablets" value="Doxycycline 100mg tab">
+            <label>Doxycycline 100mg tab</label><br>
+            <input type="radio" name="tablets" value="Favipiravir 200mg Tab">
+            <label>Favipiravir 200mg Tab</label><br>
+            <input type="radio" name="tablets" value="Ivermectin Tab 12mg">
+            <label>Ivermectin Tab 12mg</label><br>
+            <input type="radio" name="tablets" value="Limcee (Vitamin C 500mg) Tab">
+            <label>Limcee (Vitamin C 500mg) Tab</label><br>
+            <input type="radio" name="tablets" value="Methylprednisolone 16 mg tab">
+            <label>Methylprednisolone 16 mg tab</label><br>
+            <input type="radio" name="tablets" value="Montair LC tab">
+            <label>Montair LC tab</label><br>
+            <input type="radio" name="tablets" value="Paracetamol 500/650mg tab">
+            <label>Paracetamol 500/650mg tab</label><br>
+        </div>
+		<br/>
+        <div class="col-lg-2 col-sm-4 col-md-3 mt-4">
+			<label for="Age" class="form-label">others</label>
+			<input type="text" class="form-control" name="others" />
+		</div>
+		<br/>
+	</form>
+	<button type="submit" onclick='SubForm()' class="btn btn-primary ml-4 mb-4">Submit</button>
+</body>
+</html>

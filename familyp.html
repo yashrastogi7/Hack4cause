@@ -1,7 +1,7 @@
 
 <html>
 	<head>
-		<title>Test</title>
+		<title>Family Portal</title>
 		<link rel="stylesheet"
 		type="text/css"
 		href="styles.css"/>
@@ -31,19 +31,24 @@
             </ul>
           </div>
     </nav>
-    <div class="container-fluid">
-     <h1 class="mt-3 mb-5">Patient Portal</h1>
-    </div>
-    <form>
-      <div class="col-lg-3 col-sm-6 col-md-6">
-        <label for="exampleInputEmail1" class="form-label">SPO2 level</label>
-        <input type="number" min="0" max='100' class="form-control" id="Spo2">
-        <label for="exampleInputEmail1" class="form-label">Heart Rate</label>
-        <input type="number" min="0" class="form-control" id="HeartRate" >
+    <br>
+    <div class="col lg-1 mb-4 mt-4">
+        <h3>
+          Name:
+          <small class="text-muted">Mukesh</small>
+        </h3>
+        <h3>
+          SPO2:
+          <small class="text-muted">96%</small>
+        </h3>
+        <h3>
+          HeartRate:
+          <small class="text-muted">70 Bps</small>
+        </h3>
       </div>
-      <br>
-      <button type="button" onclick="pageRedirect()" class="btn btn-primary ml-4">Submit</button>
-    </form>
-    <h3 id="O2"><h3>
-	</body>
+      <br/>
+    
+    <a href="https://docs.google.com/spreadsheets/d/14upVX8lk9DABhNPMfTQKMrK8ls8Xd3SpA9DbDyL4Tpk/edit#gid=0" class="btn btn-primary btn-lg mt-5 ml-5 " role="button">Live Status</a>
+    <a href="https://docs.google.com/spreadsheets/d/1aup_rGmnqB8dZ-YN-mV0tK6VSIC7mthhLBlIj29BtWQ/edit?usp=sharing" class="btn btn-secondary btn-lg mt-5 ml-5" role="button">Prescriptions</a>
+</body>
 </html>
