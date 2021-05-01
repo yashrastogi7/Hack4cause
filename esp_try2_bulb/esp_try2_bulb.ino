@@ -106,7 +106,7 @@ void loop(){
             
                
             // Display current state, and ON/OFF buttons for GPIO 4  
-            client.println("<p>GPIO 4 - State " + output4State + "</p>");
+            client.println("<p> STOP  BUTTON</p>");
             // If the output4State is off, it displays the ON button       
             if (output4State=="off") {
               client.println("<p><a href=\"/4/on\"><button class=\"button\">ON</button></a></p>");
