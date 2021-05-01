@@ -5,5 +5,4 @@ function pageRedirect() {
         window.open("https://www.tutorialrepublic.com/");
     }
     else {document.getElementById("O2").innerHTML= "O2 Level Fine!"}
-    
-  }
+}
